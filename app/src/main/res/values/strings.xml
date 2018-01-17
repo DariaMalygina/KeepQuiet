@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Keep Quiet</string>
+    <integer name="com_vk_sdk_AppId">6335764</integer>
+</resources>
