@@ -1,6 +1,7 @@
 package com.example.daria.keepquiet;
 
 import android.app.Application;
+import android.widget.Toast;
 
 import com.vk.sdk.VKAccessToken;
 import com.vk.sdk.VKAccessTokenTracker;
@@ -14,6 +15,7 @@ public class App extends Application {
         public void onVKAccessTokenChanged(VKAccessToken oldToken, VKAccessToken newToken) {
             if (newToken == null) {
                 // VKAccessToken is invalid
+                Toast.makeText(App.this, "AccessToken invalidated", Toast.LENGTH_LONG).show();
             }
         }
     };
